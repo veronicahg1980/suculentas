@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suculentas & Naturaleza | Belleza natural que inspira y perdura</title>
+    
+    <!-- Metadatos SEO y Open Graph -->
+    <meta name="description" content="Tienda online chilena especializada en suculentas, arreglos decorativos, maceteros, accesorios de jardinería y asesorías. Despachos a todo Chile.">
+    <meta name="keywords" content="Comprar suculentas en Chile, Tienda de suculentas, Suculentas a domicilio, Arreglos de suculentas, Maceteros decorativos, Cuidados de suculentas, Regalos naturales Chile">
+    <meta property="og:title" content="Suculentas & Naturaleza | Tienda Online Boutique Chile">
+    <meta property="og:description" content="Descubre el encanto de las suculentas y aprende a cuidarlas. Envíos seguros a regiones de Chile.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts: Cormorant Garamond (Elegante/Editorial) & Inter (Limpio/Legible) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        salvia: {
+                            50: '#f4f6f2',
+                            100: '#e5eadd',
+                            200: '#cbd6bd',
+                            300: '#abbc98',
+                            400: '#87986a', // Verde Salvia Principal
+                            500: '#6d7f52',
+                            600: '#55653f',
+                            700: '#445133',
+                            800: '#38422c',
+                            900: '#2e3725',
+                        },
+                        bosque: {
+                            800: '#1e2b1b',
+                            900: '#141d12', // Verde Bosque Profundo
+                        },
+                        oliva: '#556b2f',
+                        arena: {
+                            100: '#fbf9f5',
+                            200: '#f5f0e6',
+                            300: '#e8e2d5',
+                            400: '#d5caaf',
+                        },
+                        tierra: '#8c6d53'
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Estilos personalizados adicionales */
+        .bg-warm-white { background-color: #FAF8F5; }
+        .glass-header {
+            background-color: rgba(250, 248, 245, 0.92);
+            backdrop-filter: blur(10px);
+        }
+        .demo-badge {
+            background: linear-gradient(135deg, #e8e2d5 0%, #cbd6bd 100%);
+        }
+        /* Custom scrollbar para una sensación refinada */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF8F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd6bd;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #87986a;
+        }
+    </style>
+</head>
+<body class="bg-warm-white text-gray-800 font-sans antialiased selection:bg-salvia-200 selection:text-bosque-900 flex flex-col min-h-screen">
+
+    <!-- BANNER INFORMATIVO / DEMO DISCLAIMER -->
+    <div class="bg-bosque-900 text-arena-200 text-xs py-2 px-4 text-center tracking-wide font-medium flex justify-center items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-salvia-400 animate-pulse"></span>
+        <span>DEMOSTRACIÓN DE TIENDA ONLINE — Contenido y precios ilustrativos para Chile. Envíos a todo el país.</span>
+    </div>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="sticky top-0 z-40 glass-header border-b border-arena-300 transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Botón Menú Móvil -->
+                <div class="flex items-center lg:hidden">
+                    <button id="mobileMenuBtn" aria-label="Abrir menú" class="p-2 text-bosque-900 hover:text-salvia-700 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+
+                <!-- Identidad Visual / Logo -->
+                <a href="#inicio" class="flex flex-col items-center group">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-7 h-7 text-salvia-500 group-hover:rotate-12 transition-transform duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 2 6.5 5 8 1.5-2 3-5 3-8 0-4 2-6 2-6s2 2 2 6c0 3 1.5 6 3 8 3-1.5 5-4.5 5-8 0-5.5-4.5-10-10-10z"/>
+                            <path d="M12 22v-6"/>
+                        </svg>
+                        <span class="font-serif text-2xl sm:text-3xl font-semibold tracking-tight text-bosque-900 group-hover:text-salvia-600 transition-colors">
+                            SUCULENTAS <span class="font-light italic text-salvia-600">&</span> NATURALEZA
+                        </span>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-gray-500 -mt-1 hidden sm:block">Boutique Botánica • Chile</span>
+                </a>
+
+                <!-- Menú Principal (Desktop) -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium tracking-wide text-gray-700">
+                    <a href="#inicio" class="hover:text-salvia-600 transition-colors py-1 border-b-2 border-transparent hover:border-salvia-500">Inicio</a>
+                    <a href="#catalogo" class="hover:text-salvia-600 transition-colors py-1 border-b-2 border-transparent hover:border-salvia-500">Comprar Suculentas</a>
+                    <a href="#arreglos" class="hover:text-salvia-600 transition-colors py-1 border-b-2 border-transparent hover:border-salvia-500">Arreglos & Regalos</a>
+                    <a href="#packs" class="hover:text-salvia-600 transition-colors py-1 border-b-2 border-transparent hover:border-salvia-500">Packs Especiales</a>
+                    <a href="#cuidados" class="hover:text-salvia-600 transition-colors py-1 border-b-2 border-transparent hover:border-salvia-500">Guía de Cuidados</a>
+                    <a href="#asesorias" class="hover:text-salvia-600 transition-colors py-1 border-b-2 border-transparent hover:border-salvia-500">Asesorías</a>
+                    <a href="#contacto" class="hover:text-salvia-600 transition-colors py-1 border-b-2 border-transparent hover:border-salvia-500">Contacto</a>
+                </nav>
+
+                <!-- Acciones (Buscador & Carrito) -->
+                <div class="flex items-center space-x-4">
+                    <button id="searchBtn" aria-label="Buscar productos" class="p-2 text-gray-700 hover:text-salvia-600 transition-colors rounded-full hover:bg-arena-200">
+                        <i data-lucide="search" class="w-5 h-5"></i>
+                    </button>
+                    
+                    <button id="cartBtn" aria-label="Ver carrito" class="relative p-2 text-gray-700 hover:text-salvia-600 transition-colors rounded-full hover:bg-arena-200">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        <span id="cartCount" class="absolute top-0 right-0 bg-salvia-600 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center transform translate-x-1 -translate-y-1">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú Móvil Desplegable -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-warm-white border-b border-arena-300 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#inicio" class="mobile-link block py-2 text-base font-medium text-bosque-900 hover:text-salvia-600">Inicio</a>
+            <a href="#catalogo" class="mobile-link block py-2 text-base font-medium text-bosque-900 hover:text-salvia-600">Comprar Suculentas</a>
+            <a href="#arreglos" class="mobile-link block py-2 text-base font-medium text-bosque-900 hover:text-salvia-600">Arreglos & Regalos</a>
+            <a href="#packs" class="mobile-link block py-2 text-base font-medium text-bosque-900 hover:text-salvia-600">Packs Especiales</a>
+            <a href="#cuidados" class="mobile-link block py-2 text-base font-medium text-bosque-900 hover:text-salvia-600">Guía de Cuidados</a>
+            <a href="#asesorias" class="mobile-link block py-2 text-base font-medium text-bosque-900 hover:text-salvia-600">Asesorías y Talleres</a>
+            <a href="#despachos" class="mobile-link block py-2 text-base font-medium text-bosque-900 hover:text-salvia-600">Envíos a todo Chile</a>
+            <a href="#contacto" class="mobile-link block py-2 text-base font-medium text-bosque-900 hover:text-salvia-600">Contacto</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <!-- HERO PRINCIPAL -->
+        <section id="inicio" class="relative min-h-[85vh] flex items-center bg-arena-100 overflow-hidden py-12 lg:py-0">
+            <!-- Background Image con Overlay Elegante -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=2000&q=80" 
+                     alt="Colección de suculentas exóticas" 
+                     class="w-full h-full object-cover object-center opacity-30 transform scale-105 transition-transform duration-10000"
+                     loading="eager">
+                <div class="absolute inset-0 bg-gradient-to-r from-warm-white via-warm-white/90 to-transparent"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                <div class="max-w-2xl space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-salvia-100 border border-salvia-200 text-salvia-800 text-xs font-semibold uppercase tracking-wider">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                        <span>Boutique Botanica Online</span>
+                    </div>
+                    
+                    <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-light text-bosque-900 leading-[1.1]">
+                        Belleza natural <br><span class="italic font-normal text-salvia-600">que inspira y perdura.</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-gray-600 font-light leading-relaxed max-w-xl">
+                        Descubre nuestra variada colección de suculentas seleccionadas, arreglos botánicos hechos a mano y todo lo que necesitas para transformarlas en protagonistas de tus espacios.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#catalogo" class="inline-flex items-center justify-center px-8 py-4 bg-salvia-600 hover:bg-salvia-700 text-white font-medium rounded-lg shadow-sm hover:shadow-md transition-all duration-300 text-center tracking-wide">
+                            EXPLORAR TIENDA
+                            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                        <a href="#marca" class="inline-flex items-center justify-center px-8 py-4 border border-bosque-900 text-bosque-900 hover:bg-bosque-900 hover:text-white font-medium rounded-lg transition-all duration-300 text-center tracking-wide">
+                            CONOCE NUESTRA MARCA
+                        </a>
+                    </div>
+
+                    <!-- Mensaje Comercial Secundario -->
+                    <div class="pt-8 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-arena-300/80 text-xs text-gray-600">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="truck" class="w-4 h-4 text-salvia-600"></i>
+                            <span>Despachos a todo Chile</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-salvia-600"></i>
+                            <span>Plantas 100% Sanas</span>
+                        </div>
+                        <div class="flex items-center gap-2 col-span-2 sm:col-span-1">
+                            <i data-lucide="book-open" class="w-4 h-4 text-salvia-600"></i>
+                            <span>Guía de Cuidados Gratis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SOBRE LA MARCA -->
+        <section id="marca" class="py-20 bg-warm-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80" 
+                                 alt="Arreglo elegante de suculentas en taller" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-arena-200 border border-arena-300 p-6 rounded-xl hidden sm:block max-w-xs shadow-lg">
+                            <p class="font-serif italic text-bosque-900 text-base">"Un pequeño mundo verde para transformar tus espacios cotidianos en rincones de paz."</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <span class="text-salvia-600 font-semibold text-xs uppercase tracking-widest">Nuestra Filosofía</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-bosque-900 font-normal">
+                            Un concepto botánico pensado para perdurar en tu hogar.
+                        </h2>
+                        <p class="text-gray-600 leading-relaxed font-light">
+                            En <strong class="font-semibold text-bosque-900">Suculentas & Naturaleza</strong> combinamos la fascinante diversidad geométrica de las plantas crasas con objetos de diseño y conocimientos aplicados. Creemos que rodearse de plantas nos reconecta con lo esencial.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed font-light">
+                            No solo seleccionamos ejemplares sanos y resistentes de productores locales en Chile; también nos aseguramos de que aprendas a brindarles el ambiente adecuado para que crezcan radiantes durante años.
+                        </p>
+                        <div class="pt-4 grid grid-cols-2 gap-4 text-sm font-medium text-bosque-900">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check-circle2" class="w-5 h-5 text-salvia-500"></i>
+                                <span>Selección de Autor</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check-circle2" class="w-5 h-5 text-salvia-500"></i>
+                                <span>Empaque Biodegradable</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check-circle2" class="w-5 h-5 text-salvia-500"></i>
+                                <span>Sustratos Preparados</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check-circle2" class="w-5 h-5 text-salvia-500"></i>
+                                <span>Acompañamiento Post-Venta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORÍAS DE PRODUCTOS -->
+        <section class="py-16 bg-arena-100/60 border-y border-arena-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-salvia-600 font-semibold text-xs uppercase tracking-widest">Explora por Categoría</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-bosque-900 mt-2 font-normal">Diseño y Naturaleza a tu Medida</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Categoría 1 -->
+                    <a href="#catalogo" onclick="filterCategory('suculentas')" class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col h-80">
+                        <img src="https://images.unsplash.com/photo-1520302638595-21439f372557?auto=format&fit=crop&w=600&q=80" 
+                             alt="Suculentas individuales y coleccionables" 
+                             class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-serif text-xl font-semibold text-bosque-900 group-hover:text-salvia-600 transition-colors">Suculentas & Crasas</h3>
+                                <p class="text-xs text-gray-500 mt-1">Variedades clásicas, raras y de colección.</p>
+                            </div>
+                            <span class="text-xs font-semibold text-salvia-600 flex items-center gap-1 mt-3">
+                                Explorar colecciones <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Categoría 2 -->
+                    <a href="#catalogo" onclick="filterCategory('arreglos')" class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col h-80">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80" 
+                             alt="Arreglos y regalos botánicos" 
+                             class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-serif text-xl font-semibold text-bosque-900 group-hover:text-salvia-600 transition-colors">Arreglos & Regalos</h3>
+                                <p class="text-xs text-gray-500 mt-1">Composiciones para centro de mesa y eventos.</p>
+                            </div>
+                            <span class="text-xs font-semibold text-salvia-600 flex items-center gap-1 mt-3">
+                                Ver composiciones <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Categoría 3 -->
+                    <a href="#catalogo" onclick="filterCategory('maceteros')" class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col h-80">
+                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80" 
+                             alt="Maceteros cerámicos y herramientas" 
+                             class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-serif text-xl font-semibold text-bosque-900 group-hover:text-salvia-600 transition-colors">Maceteros & Accesorios</h3>
+                                <p class="text-xs text-gray-500 mt-1">Cerámica, sustrato premium y herramientas.</p>
+                            </div>
+                            <span class="text-xs font-semibold text-salvia-600 flex items-center gap-1 mt-3">
+                                Ver accesorios <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Categoría 4 -->
+                    <a href="#cuidados" class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col h-80">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80" 
+                             alt="Asesorías botánicas y talleres" 
+                             class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-serif text-xl font-semibold text-bosque-900 group-hover:text-salvia-600 transition-colors">Cuidados & Asesorías</h3>
+                                <p class="text-xs text-gray-500 mt-1">Guías digitales, talleres y consultoría.</p>
+                            </div>
+                            <span class="text-xs font-semibold text-salvia-600 flex items-center gap-1 mt-3">
+                                Aprender más <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS DESTACADOS & CATÁLOGO INTERACTIVO -->
+        <section id="catalogo" class="py-20 bg-warm-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                    <div>
+                        <span class="text-salvia-600 font-semibold text-xs uppercase tracking-widest">Catálogo Seleccionado</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-bosque-900 mt-1 font-normal">Nuestros Productos Destacados</h2>
+                    </div>
+                    
+                    <!-- Filtros de Categoría -->
+                    <div class="flex flex-wrap gap-2 mt-6 md:mt-0 text-sm">
+                        <button onclick="filterCategory('todos')" class="cat-filter active px-4 py-2 rounded-full border border-salvia-500 bg-salvia-600 text-white font-medium transition-all" data-cat="todos">Todos</button>
+                        <button onclick="filterCategory('suculentas')" class="cat-filter px-4 py-2 rounded-full border border-arena-300 bg-white text-gray-700 hover:border-salvia-400 transition-all" data-cat="suculentas">Suculentas</button>
+                        <button onclick="filterCategory('arreglos')" class="cat-filter px-4 py-2 rounded-full border border-arena-300 bg-white text-gray-700 hover:border-salvia-400 transition-all" data-cat="arreglos">Arreglos</button>
+                        <button onclick="filterCategory('maceteros')" class="cat-filter px-4 py-2 rounded-full border border-arena-300 bg-white text-gray-700 hover:border-salvia-400 transition-all" data-cat="maceteros">Maceteros</button>
+                    </div>
+                </div>
+
+                <!-- Grid de Productos -->
+                <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Los productos se inyectan vía JS dinámicamente -->
+                </div>
+
+                <!-- Nota Demostrativa -->
+                <div class="mt-12 p-4 rounded-lg bg-arena-100 border border-arena-300 text-center text-xs text-gray-600 max-w-2xl mx-auto">
+                    <p class="font-medium text-bosque-900">💡 Nota de Contenido Demostrativo:</p>
+                    <p>Los precios y nombres aquí exhibidos corresponden a una maqueta funcional. Los valores definitivos serán confirmados al habilitar el checkout comercial oficial en Chile.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PACKS Y EXPERIENCIAS -->
+        <section id="packs" class="py-20 bg-bosque-900 text-arena-100 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-salvia-300 font-semibold text-xs uppercase tracking-widest">Kits Especiales & Sets</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-white mt-2 font-light">Packs & Experiencias Botánicas</h2>
+                    <p class="text-arena-300 mt-3 font-light text-sm">Combinaciones pensadas para regalar o iniciar tu propio jardín sin complicaciones.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Pack 1 -->
+                    <div class="bg-bosque-800/80 rounded-xl p-6 border border-salvia-700/50 flex flex-col justify-between hover:border-salvia-400 transition-all duration-300">
+                        <div>
+                            <div class="w-12 h-12 rounded-full bg-salvia-600/20 text-salvia-300 flex items-center justify-center mb-6">
+                                <i data-lucide="sprout" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-salvia-300">Ideal para comenzar</span>
+                            <h3 class="font-serif text-2xl text-white mt-1">Pack Principiante</h3>
+                            <p class="text-xs text-arena-300 mt-2 font-light leading-relaxed">
+                                Suculenta de fácil cuidado + macetero artesanal de gres + sustrato premium + guía impresa paso a paso.
+                            </p>
+                            <div class="mt-6 font-serif text-2xl text-salvia-200">$14.990 <span class="text-xs font-sans text-gray-400">CLP (Ref.)</span></div>
+                        </div>
+                        <button onclick="addToCart(101, 'Pack Principiante', 14990, 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=400&q=80')" class="mt-6 w-full py-3 bg-salvia-600 hover:bg-salvia-500 text-white rounded-lg text-sm font-medium transition-colors">
+                            Agregar Pack
+                        </button>
+                    </div>
+
+                    <!-- Pack 2 -->
+                    <div class="bg-bosque-800/80 rounded-xl p-6 border border-salvia-700/50 flex flex-col justify-between hover:border-salvia-400 transition-all duration-300">
+                        <div>
+                            <div class="w-12 h-12 rounded-full bg-salvia-600/20 text-salvia-300 flex items-center justify-center mb-6">
+                                <i data-lucide="grid" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-salvia-300">Para coleccionistas</span>
+                            <h3 class="font-serif text-2xl text-white mt-1">Pack Colección</h3>
+                            <p class="text-xs text-arena-300 mt-2 font-light leading-relaxed">
+                                Selección de 4 variedades exclusivas (Echeverias raras y Haworthias) listos para trasplantar.
+                            </p>
+                            <div class="mt-6 font-serif text-2xl text-salvia-200">$22.990 <span class="text-xs font-sans text-gray-400">CLP (Ref.)</span></div>
+                        </div>
+                        <button onclick="addToCart(102, 'Pack Colección', 22990, 'https://images.unsplash.com/photo-1520302638595-21439f372557?auto=format&fit=crop&w=400&q=80')" class="mt-6 w-full py-3 bg-salvia-600 hover:bg-salvia-500 text-white rounded-lg text-sm font-medium transition-colors">
+                            Agregar Pack
+                        </button>
+                    </div>
+
+                    <!-- Pack 3 -->
+                    <div class="bg-bosque-800/80 rounded-xl p-6 border border-salvia-700/50 flex flex-col justify-between hover:border-salvia-400 transition-all duration-300">
+                        <div>
+                            <div class="w-12 h-12 rounded-full bg-salvia-600/20 text-salvia-300 flex items-center justify-center mb-6">
+                                <i data-lucide="gift" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-salvia-300">Edición Especial</span>
+                            <h3 class="font-serif text-2xl text-white mt-1">Pack Regalo Elegante</h3>
+                            <p class="text-xs text-arena-300 mt-2 font-light leading-relaxed">
+                                Arreglo en cuenco cerámico decorativo, tarjeta personalizada dedicada y caja especial de transporte.
+                            </p>
+                            <div class="mt-6 font-serif text-2xl text-salvia-200">$28.990 <span class="text-xs font-sans text-gray-400">CLP (Ref.)</span></div>
+                        </div>
+                        <button onclick="addToCart(103, 'Pack Regalo Elegante', 28990, 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=400&q=80')" class="mt-6 w-full py-3 bg-salvia-600 hover:bg-salvia-500 text-white rounded-lg text-sm font-medium transition-colors">
+                            Agregar Pack
+                        </button>
+                    </div>
+
+                    <!-- Pack 4 -->
+                    <div class="bg-bosque-800/80 rounded-xl p-6 border border-salvia-700/50 flex flex-col justify-between hover:border-salvia-400 transition-all duration-300">
+                        <div>
+                            <div class="w-12 h-12 rounded-full bg-salvia-600/20 text-salvia-300 flex items-center justify-center mb-6">
+                                <i data-lucide="shield" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-salvia-300">Nutrición & Salud</span>
+                            <h3 class="font-serif text-2xl text-white mt-1">Pack Cuidado & Nutrición</h3>
+                            <p class="text-xs text-arena-300 mt-2 font-light leading-relaxed">
+                                Sustrato especial drenante (2L) + fertilizante orgánico gota a gota + regadera de precisión + pala pequeña.
+                            </p>
+                            <div class="mt-6 font-serif text-2xl text-salvia-200">$17.500 <span class="text-xs font-sans text-gray-400">CLP (Ref.)</span></div>
+                        </div>
+                        <button onclick="addToCart(104, 'Pack Cuidado & Nutrición', 17500, 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=400&q=80')" class="mt-6 w-full py-3 bg-salvia-600 hover:bg-salvia-500 text-white rounded-lg text-sm font-medium transition-colors">
+                            Agregar Pack
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN EDUCATIVA: APRENDE A CUIDAR TUS SUCULENTAS -->
+        <section id="cuidados" class="py-20 bg-warm-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-salvia-600 font-semibold text-xs uppercase tracking-widest">Guía Practica Botánica</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-bosque-900 mt-1 font-normal">Aprende a Cuidar tus Suculentas</h2>
+                    <p class="text-gray-600 text-sm mt-3 font-light">
+                        Las suculentas son plantas nobles y de bajo mantenimiento, pero requieren condiciones específicas de luz y riego para lucir saludables.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Tarjeta 1: Riego -->
+                    <div class="bg-arena-100 rounded-xl p-8 border border-arena-300 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-salvia-200 rounded-full flex items-center justify-center text-salvia-700 mb-6">
+                            <i data-lucide="droplets" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-bosque-900 mb-3">Frecuencia de Riego</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Aplica la regla de <strong>"riego profundo pero espaciado"</strong>. Deja secar por completo el sustrato entre riegos. En primavera/verano riega cada 10-14 días; en invierno reduce a 1 vez al mes.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 2: Luz -->
+                    <div class="bg-arena-100 rounded-xl p-8 border border-arena-300 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-salvia-200 rounded-full flex items-center justify-center text-salvia-700 mb-6">
+                            <i data-lucide="sun" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-bosque-900 mb-3">Iluminación Adecuada</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Necesitan al menos 4 a 6 horas de luz indirecta brillante al día. Evita el sol directo directo del mediodía en verano para no quemar sus hojas carnosas.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 3: Sustrato -->
+                    <div class="bg-arena-100 rounded-xl p-8 border border-arena-300 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-salvia-200 rounded-full flex items-center justify-center text-salvia-700 mb-6">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-bosque-900 mb-3">Sustrato & Drenaje</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Utiliza una mezcla porosa: 50% tierra orgánica de hoja y 50% material inerte (pómex, perlita o arena fina). Asegúrate siempre de que el macetero tenga orificio de drenaje.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Botón Acción Educativa -->
+                <div class="text-center mt-12">
+                    <button onclick="openGuideModal()" class="inline-flex items-center gap-2 px-6 py-3 bg-bosque-900 text-white rounded-lg text-sm font-medium hover:bg-salvia-700 transition-colors">
+                        <i data-lucide="book" class="w-4 h-4"></i>
+                        <span>DESCUBRIR TODOS LOS CONSEJOS DETALLADOS</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ASESORÍAS Y SERVICIOS -->
+        <section id="asesorias" class="py-20 bg-arena-200 border-y border-arena-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    
+                    <div class="space-y-6">
+                        <span class="text-salvia-600 font-semibold text-xs uppercase tracking-widest">Servicios Personalizados</span>
+                        <h2 class="font-serif text-3xl sm:text-5xl text-bosque-900 font-normal">
+                            No solo vendemos plantas, te acompañamos a mantenerlas vivas.
+                        </h2>
+                        <p class="text-gray-700 leading-relaxed text-sm">
+                            ¿Tienes dudas con la iluminación de tu balcón o tus plantas lucen descoloridas? Ofrecemos orientación técnica personalizada, recomendaciones de replante e impartimos talleres teóricos y prácticos.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-full bg-salvia-600 text-white flex items-center justify-center shrink-0 mt-1">
+                                    <i data-lucide="user-check" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-bosque-900 text-base">Asesoría Virtual 1 a 1</h4>
+                                    <p class="text-xs text-gray-600">Evaluación de tus espacios e iluminación por videollamada para recomendar las especies idóneas.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-full bg-salvia-600 text-white flex items-center justify-center shrink-0 mt-1">
+                                    <i data-lucide="scissors" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-bosque-900 text-base">Talleres de Reproducción & Poda</h4>
+                                    <p class="text-xs text-gray-600">Aprende la técnica de propagación por hoja y esqueje en nuestras sesiones grupales.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <button onclick="openAdvisoryModal()" class="px-8 py-4 bg-salvia-600 hover:bg-salvia-700 text-white font-medium rounded-lg text-sm transition-colors shadow-sm">
+                                CONSULTAR ASESORÍAS DISPONIBLES
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="aspect-square rounded-2xl overflow-hidden shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Taller de cuidado de plantas" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DESPACHOS A TODO CHILE -->
+        <section id="despacho" class="py-16 bg-warm-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-salvia-50 rounded-2xl border border-salvia-200 p-8 sm:p-12">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-2 space-y-4">
+                            <div class="inline-flex items-center gap-2 text-salvia-700 font-semibold text-xs tracking-wider uppercase">
+                                <i data-lucide="truck" class="w-4 h-4"></i>
+                                <span>Envíos Nacionales</span>
+                            </div>
+                            <h2 class="font-serif text-3xl text-bosque-900 font-normal">La naturaleza llega protegida hasta tu hogar</h2>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Diseñamos un sistema de embalaje ecológico especial con ventilación y fijación anti-vuelco para garantizar que cada suculenta llegue sana e intacta a las principales ciudades de Chile (Región Metropolitana y Regiones).
+                            </p>
+                            <div class="flex flex-wrap gap-4 text-xs font-medium text-bosque-900 pt-2">
+                                <span class="bg-white px-3 py-1.5 rounded-full border border-salvia-300">📦 Embalaje Anti-Impacto</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full border border-salvia-300">⏱️ Entregas en 48-72h hab.</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full border border-salvia-300">🌿 Garantía de Llegada Viva</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-salvia-200 text-xs text-gray-600 space-y-3 shadow-sm">
+                            <h4 class="font-bold text-bosque-900 border-b border-gray-100 pb-2">Información Relevante de Despacho:</h4>
+                            <p>• Los despachos de plantas vivas a zonas extremas se coordinan según condiciones climáticas del destino.</p>
+                            <p>• Se incluye guía rápida de aclimatación inmediata para recibir tu pedido.</p>
+                            <span class="block text-[10px] text-gray-500 italic mt-2">*Sujeto a confirmación según cobertura logística regional.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESEÑAS DE CLIENTES / COMUNIDAD -->
+        <section class="py-20 bg-warm-white border-t border-arena-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-salvia-600 font-semibold text-xs uppercase tracking-widest">Experiencias Compartidas</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-bosque-900 mt-1 font-normal">Lo que opinan nuestros clientes</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-arena-100/60 p-6 rounded-xl border border-arena-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-500 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-xs text-gray-700 italic leading-relaxed">
+                                "Llegaron impecables a Concepción. El embalaje es una maravilla, ninguna hojita rota y la guía impreso sirve muchísimo para quienes recién empezamos."
+                            </p>
+                        </div>
+                        <div class="mt-6 border-t border-arena-300 pt-4 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-salvia-300 flex items-center justify-center font-bold text-bosque-900 text-xs">MC</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-bosque-900">María C.</h4>
+                                <span class="text-[10px] text-gray-500">Santiago, Chile (Reseña Demostración)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-arena-100/60 p-6 rounded-xl border border-arena-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-500 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-xs text-gray-700 italic leading-relaxed">
+                                "El Pack Regalo superó mis expectativas. Lo compré para el cumpleaños de mi madre en Viña del Mar y quedó fascinada con los detalles cerámicos."
+                            </p>
+                        </div>
+                        <div class="mt-6 border-t border-arena-300 pt-4 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-salvia-300 flex items-center justify-center font-bold text-bosque-900 text-xs">RO</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-bosque-900">Rodrigo O.</h4>
+                                <span class="text-[10px] text-gray-500">Valparaíso, Chile (Reseña Demostración)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-arena-100/60 p-6 rounded-xl border border-arena-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-500 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-xs text-gray-700 italic leading-relaxed">
+                                "La asesoría personalizada me ayudó a salvar una Echeveria que estaba etiolada. Son súper amables y verdaderamente expertos."
+                            </p>
+                        </div>
+                        <div class="mt-6 border-t border-arena-300 pt-4 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-salvia-300 flex items-center justify-center font-bold text-bosque-900 text-xs">CP</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-bosque-900">Camila P.</h4>
+                                <span class="text-[10px] text-gray-500">La Serena, Chile (Reseña Demostración)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PREGUNTAS FRECUENTES (FAQ ACORDEÓN) -->
+        <section class="py-20 bg-arena-100/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-salvia-600 font-semibold text-xs uppercase tracking-widest">Resuelve tus Dudas</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-bosque-900 mt-1 font-normal">Preguntas Frecuentes</h2>
+                </div>
+
+                <div class="space-y-4" id="faqAccordion">
+                    
+                    <div class="border border-arena-300 rounded-lg bg-white overflow-hidden">
+                        <button onclick="toggleFaq(1)" class="w-full text-left p-5 font-semibold text-bosque-900 flex justify-between items-center hover:bg-arena-100/50 transition-colors">
+                            <span>¿Realizan envíos a regiones en todo Chile?</span>
+                            <i data-lucide="chevron-down" id="faqIcon-1" class="w-5 h-5 text-salvia-600 transition-transform"></i>
+                        </button>
+                        <div id="faqContent-1" class="hidden p-5 pt-0 text-xs text-gray-600 leading-relaxed border-t border-gray-100">
+                            Sí, despachamos a través de servicios courier especializados a Santiago y regiones de Chile. Cada envío se empaca con protección térmica e hidráulica para garantizar la seguridad de la planta.
+                        </div>
+                    </div>
+
+                    <div class="border border-arena-300 rounded-lg bg-white overflow-hidden">
+                        <button onclick="toggleFaq(2)" class="w-full text-left p-5 font-semibold text-bosque-900 flex justify-between items-center hover:bg-arena-100/50 transition-colors">
+                            <span>¿Qué hago apenas llega mi suculenta por despacho?</span>
+                            <i data-lucide="chevron-down" id="faqIcon-2" class="w-5 h-5 text-salvia-600 transition-transform"></i>
+                        </button>
+                        <div id="faqContent-2" class="hidden p-5 pt-0 text-xs text-gray-600 leading-relaxed border-t border-gray-100">
+                            Retírala con cuidado del empaque, ubícala en un lugar iluminado sin sol directo por 48 horas para que se aclimate y no la riegues inmediatamente si el sustrato viene húmedo.
+                        </div>
+                    </div>
+
+                    <div class="border border-arena-300 rounded-lg bg-white overflow-hidden">
+                        <button onclick="toggleFaq(3)" class="w-full text-left p-5 font-semibold text-bosque-900 flex justify-between items-center hover:bg-arena-100/50 transition-colors">
+                            <span>¿Qué medios de pago están disponibles?</span>
+                            <i data-lucide="chevron-down" id="faqIcon-3" class="w-5 h-5 text-salvia-600 transition-transform"></i>
+                        </button>
+                        <div id="faqContent-3" class="hidden p-5 pt-0 text-xs text-gray-600 leading-relaxed border-t border-gray-100">
+                            (Información Demostrativa) Al activar la pasarela comercial definitiva, se aceptarán tarjetas de débito/crédito nacionales (Webpay), transferencias bancarias directas y plataformas de pago electrónico.
+                        </div>
+                    </div>
+
+                    <div class="border border-arena-300 rounded-lg bg-white overflow-hidden">
+                        <button onclick="toggleFaq(4)" class="w-full text-left p-5 font-semibold text-bosque-900 flex justify-between items-center hover:bg-arena-100/50 transition-colors">
+                            <span>¿Cómo agendar una asesoría personalizada?</span>
+                            <i data-lucide="chevron-down" id="faqIcon-4" class="w-5 h-5 text-salvia-600 transition-transform"></i>
+                        </button>
+                        <div id="faqContent-4" class="hidden p-5 pt-0 text-xs text-gray-600 leading-relaxed border-t border-gray-100">
+                            Puedes hacer clic en nuestro botón de "Consultar Asesorías" o escribirnos al formulario de contacto indicando tus necesidades. Coordinaremos una hora y medio de atención.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER Y COMUNIDAD -->
+        <section class="py-20 bg-salvia-600 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+                <i data-lucide="mail-open" class="w-12 h-12 mx-auto text-salvia-200"></i>
+                <h2 class="font-serif text-3xl sm:text-5xl font-light">Un espacio para quienes amar la naturaleza</h2>
+                <p class="text-salvia-100 text-sm max-w-xl mx-auto font-light leading-relaxed">
+                    Recibe en tu correo consejos estacionales de cuidado, avisos de nuevas colecciones botánicas y descuentos especiales para miembros.
+                </p>
+
+                <form id="newsletterForm" onsubmit="handleNewsletter(event)" class="max-w-md mx-auto flex flex-col sm:flex-row gap-3 pt-4">
+                    <input type="email" required placeholder="Tu correo electrónico..." 
+                           class="px-4 py-3 rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white flex-grow text-sm">
+                    <button type="submit" class="px-6 py-3 bg-bosque-900 hover:bg-bosque-800 text-white font-medium rounded-lg text-sm transition-colors whitespace-nowrap">
+                        SUSCRIBIRME
+                    </button>
+                </form>
+                <div id="newsletterMsg" class="hidden text-xs text-salvia-200 font-medium">
+                    ✓ ¡Gracias por unirte a nuestra comunidad botánica!
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto" class="py-20 bg-warm-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto bg-white p-8 sm:p-12 rounded-2xl border border-arena-300 shadow-sm">
+                    <div class="text-center mb-8">
+                        <span class="text-salvia-600 font-semibold text-xs uppercase tracking-widest">Estamos para Ayudarte</span>
+                        <h2 class="font-serif text-3xl text-bosque-900 mt-1 font-normal">Ponte en Contacto</h2>
+                        <p class="text-xs text-gray-500 mt-2">Envíanos tus consultas sobre pedidos, talleres o recomendaciones de especies.</p>
+                    </div>
+
+                    <form id="contactForm" onsubmit="handleContact(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-bosque-900 uppercase tracking-wider mb-2">Nombre completo</label>
+                                <input type="text" required placeholder="Ej: Constanza Silva" class="w-full p-3 rounded-lg border border-arena-300 focus:border-salvia-500 focus:ring-1 focus:ring-salvia-500 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-bosque-900 uppercase tracking-wider mb-2">Correo Electrónico</label>
+                                <input type="email" required placeholder="ejemplo@correo.cl" class="w-full p-3 rounded-lg border border-arena-300 focus:border-salvia-500 focus:ring-1 focus:ring-salvia-500 outline-none text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-bosque-900 uppercase tracking-wider mb-2">Asunto de consulta</label>
+                            <select class="w-full p-3 rounded-lg border border-arena-300 focus:border-salvia-500 outline-none text-sm text-gray-700">
+                                <option>Consulta sobre productos o catálogo</option>
+                                <option>Información de envíos a regiones</option>
+                                <option>Asesoria de cuidados o agendamiento</option>
+                                <option>Ventas al por mayor o corporativas</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-bosque-900 uppercase tracking-wider mb-2">Mensaje</label>
+                            <textarea rows="4" required placeholder="Escribe tu mensaje aquí..." class="w-full p-3 rounded-lg border border-arena-300 focus:border-salvia-500 focus:ring-1 focus:ring-salvia-500 outline-none text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-salvia-600 hover:bg-salvia-700 text-white font-medium rounded-lg text-sm transition-colors tracking-wide">
+                            ENVIAR MENSAJE
+                        </button>
+                    </form>
+                    
+                    <div id="contactMsg" class="hidden mt-4 p-4 rounded-lg bg-salvia-100 text-salvia-800 text-center text-xs font-medium">
+                        ✓ Mensaje enviado exitosamente. Nos pondremos en contacto a la brevedad.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="bg-bosque-900 text-arena-200 border-t border-bosque-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <!-- Columna Marca -->
+                <div class="lg:col-span-2 space-y-4">
+                    <span class="font-serif text-2xl font-semibold tracking-tight text-white block">
+                        SUCULENTAS <span class="font-light italic text-salvia-400">&</span> NATURALEZA
+                    </span>
+                    <p class="text-xs text-arena-300 leading-relaxed font-light max-w-sm">
+                        Belleza natural que inspira y perdura. Tienda boutique chilena enfocada en suculentas seleccionadas, arreglos de autor y educación botánica.
+                    </p>
+                    <div class="pt-2 flex items-center space-x-4 text-arena-300">
+                        <a href="#" aria-label="Instagram" class="hover:text-salvia-400 transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" aria-label="Facebook" class="hover:text-salvia-400 transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" aria-label="Pinterest" class="hover:text-salvia-400 transition-colors"><i data-lucide="pin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Accesos Rápidos -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-salvia-300">Navegación</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="#catalogo" class="hover:text-white transition-colors">Comprar Suculentas</a></li>
+                        <li><a href="#arreglos" class="hover:text-white transition-colors">Arreglos & Regalos</a></li>
+                        <li><a href="#packs" class="hover:text-white transition-colors">Packs Especiales</a></li>
+                        <li><a href="#cuidados" class="hover:text-white transition-colors">Guías de Cuidado</a></li>
+                    </ul>
+                </div>
+
+                <!-- Información -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-salvia-300">Información</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#despacho" class="hover:text-white transition-colors">Despachos a Chile</a></li>
+                        <li><a href="#faqAccordion" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+                        <li><a href="#" onclick="showNotice('Políticas de privacidad en proceso de redacción legal.')" class="hover:text-white transition-colors">Políticas de Privacidad</a></li>
+                        <li><a href="#" onclick="showNotice('Términos comerciales sujetos a pasarela definitiva.')" class="hover:text-white transition-colors">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cobertura -->
+                <div class="space-y-3 text-xs">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-salvia-300">Cobertura</h4>
+                    <p class="text-arena-300">Santiago & Principales Regiones de Chile.</p>
+                    <p class="text-[10px] text-gray-400 italic">Atención online lunes a viernes de 09:00 a 18:00 hrs.</p>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="mt-12 pt-8 border-t border-bosque-800 flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-400 gap-4">
+                <p>© Suculentas & Naturaleza. Todos los derechos reservados. Chile.</p>
+                <div class="flex items-center gap-4">
+                    <span class="demo-badge text-bosque-900 px-3 py-1 rounded-full text-[10px] font-semibold">Plataforma Demostrativa</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OVER CARRITO DE COMPRAS -->
+    <div id="cartDrawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 bg-gray-900/50 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+
+        <div class="fixed inset-y-0 right-0 pl-10 max-w-full flex">
+            <div class="w-screen max-w-md bg-warm-white shadow-2xl flex flex-col">
+                <div class="p-6 bg-bosque-900 text-white flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="shopping-bag" class="w-5 h-5 text-salvia-400"></i>
+                        <h2 class="font-serif text-xl font-normal">Tu Carrito de Compras</h2>
+                    </div>
+                    <button onclick="toggleCart()" class="text-arena-300 hover:text-white">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+
+                <!-- Items del Carrito -->
+                <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-6 space-y-4">
+                    <!-- Dinámico vía JS -->
+                </div>
+
+                <!-- Resumen y Checkout -->
+                <div class="p-6 border-t border-arena-300 bg-arena-100 space-y-4">
+                    <div class="flex justify-between text-base font-semibold text-bosque-900">
+                        <span>Subtotal estimado:</span>
+                        <span id="cartTotal">$0 CLP</span>
+                    </div>
+                    <p class="text-[10px] text-gray-500">Gastos de envío se calculan en el proceso de pago final.</p>
+                    <button onclick="checkoutDemo()" class="w-full py-4 bg-salvia-600 hover:bg-salvia-700 text-white font-medium rounded-lg text-sm transition-colors">
+                        CONTINUAR CON LA COMPRA
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE BÚSQUEDA -->
+    <div id="searchModal" class="fixed inset-0 z-50 bg-bosque-900/80 backdrop-blur-sm flex items-start justify-center pt-20 hidden">
+        <div class="bg-warm-white w-full max-w-xl mx-4 rounded-xl p-6 shadow-2xl relative">
+            <button onclick="toggleSearch()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <h3 class="font-serif text-2xl text-bosque-900 mb-4">Buscar en la Tienda</h3>
+            <div class="relative">
+                <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Ej: Echeveria, Macetero, Sustrato..." 
+                       class="w-full pl-10 pr-4 py-3 rounded-lg border border-arena-300 focus:outline-none focus:border-salvia-500 text-sm">
+                <i data-lucide="search" class="w-5 h-5 absolute left-3 top-3.5 text-gray-400"></i>
+            </div>
+            <div id="searchResults" class="mt-4 max-h-60 overflow-y-auto space-y-2">
+                <!-- Resultados dinámicos -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL VISTA DETALLE DE PRODUCTO -->
+    <div id="productModal" class="fixed inset-0 z-50 bg-bosque-900/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-warm-white max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col md:flex-row max-h-[90vh] overflow-y-auto">
+            <button onclick="closeProductModal()" class="absolute top-4 right-4 z-10 p-2 bg-white/80 rounded-full text-gray-700 hover:text-black">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="md:w-1/2 h-64 md:h-auto">
+                <img id="modalProductImg" src="" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="md:w-1/2 p-6 flex flex-col justify-between space-y-4">
+                <div>
+                    <span id="modalProductCat" class="text-[10px] font-bold uppercase tracking-widest text-salvia-600"></span>
+                    <h3 id="modalProductTitle" class="font-serif text-3xl text-bosque-900 mt-1"></h3>
+                    <p id="modalProductDesc" class="text-xs text-gray-600 mt-3 leading-relaxed"></p>
+                </div>
+                <div>
+                    <div id="modalProductPrice" class="font-serif text-3xl text-salvia-700 font-semibold mb-4"></div>
+                    <button id="modalProductBtn" class="w-full py-3 bg-salvia-600 hover:bg-salvia-700 text-white rounded-lg font-medium text-sm transition-colors">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LÓGICO E INTERACTIVO -->
+    <script>
+        // DATA DEMOSTRATIVA DE PRODUCTOS
+        const products = [
+            {
+                id: 1,
+                name: "Echeveria Elegans",
+                category: "suculentas",
+                categoryLabel: "Suculenta Individual",
+                price: 4990,
+                image: "https://images.unsplash.com/photo-1520302638595-21439f372557?auto=format&fit=crop&w=600&q=80",
+                description: "Conocida como Rosa de Alabastro, destaca por su elegante roseta azul pálido con bordes traslúcidos."
+            },
+            {
+                id: 2,
+                name: "Haworthia Fasciata (Zebra)",
+                category: "suculentas",
+                categoryLabel: "Suculenta Especial",
+                price: 5990,
+                image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80",
+                description: "Suculenta compacta caracterizada por sus rayas blancas horizontales relieve. Tolerante a baja luz."
+            },
+            {
+                id: 3,
+                name: "Centro de Mesa Botánico",
+                category: "arreglos",
+                categoryLabel: "Arreglo Decorativo",
+                price: 24990,
+                image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80",
+                description: "Hermosa composición de 5 variedades de suculentas en cuenco cerámico artesanal acabado arena."
+            },
+            {
+                id: 4,
+                name: "Macetero Gres Artesanal",
+                category: "maceteros",
+                categoryLabel: "Macetero & Accesorio",
+                price: 8990,
+                image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80",
+                description: "Macetero de barro horneado a alta temperatura con plato de drenaje incluido. Tono beige terroso."
+            },
+            {
+                id: 5,
+                name: "Sedum Morganianum (Burrito)",
+                category: "suculentas",
+                categoryLabel: "Suculenta Colgante",
+                price: 6490,
+                image: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=600&q=80",
+                description: "Variedad de hermosas tallos colgantes repletos de hojas cilíndricas carnosas verde azulado."
+            },
+            {
+                id: 6,
+                name: "Terrario de Cristal Minimalista",
+                category: "arreglos",
+                categoryLabel: "Composición Regalo",
+                price: 19990,
+                image: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=600&q=80",
+                description: "Ecosistema semi-abierto de vidrio con suculentas variadas y capas decorativas de piedras volcánicas."
+            },
+            {
+                id: 7,
+                name: "Sustrato Premium Suculentas 3L",
+                category: "maceteros",
+                categoryLabel: "Accesorio de Cuidado",
+                price: 4500,
+                image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
+                description: "Mezcla ideal de pómex, humus de lombriz y corteza que previene la pudrición radicular."
+            },
+            {
+                id: 8,
+                name: "Crassula Ovata (Planta de Jade)",
+                category: "suculentas",
+                categoryLabel: "Suculenta Arbustiva",
+                price: 7990,
+                image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80",
+                description: "Clásica planta del dinero y la abundancia, con hojas gruesas y apariencia miniatura tipo bonsái."
+            }
+        ];
+
+        // ESTADO DEL CARRITO
+        let cart = [];
+
+        // INITIALIZATION
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            renderProducts(products);
+            setupMobileMenu();
+        });
+
+        // RENDERIZAR PRODUCTOS
+        function renderProducts(items) {
+            const container = document.getElementById('productsGrid');
+            container.innerHTML = '';
+
+            items.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-xl overflow-hidden border border-arena-300 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group';
+                card.innerHTML = `
+                    <div>
+                        <div class="relative overflow-hidden h-60 bg-arena-100">
+                            <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 demo-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-bosque-900 uppercase tracking-wider">
+                                Demostración
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-salvia-600 block mb-1">${product.categoryLabel}</span>
+                            <h3 class="font-serif text-xl text-bosque-900 group-hover:text-salvia-600 transition-colors">${product.name}</h3>
+                            <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">${product.description}</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 border-t border-gray-50 flex items-center justify-between mt-4">
+                        <div>
+                            <span class="text-[10px] text-gray-400 block uppercase">Precio</span>
+                            <span class="font-serif text-xl font-semibold text-bosque-900">$${product.price.toLocaleString('es-CL')} <span class="text-[10px] font-sans font-normal">CLP</span></span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openProductModal(${product.id})" class="p-2 border border-arena-300 rounded-lg hover:bg-arena-100 text-gray-600 transition-colors" title="Vista Rápida">
+                                <i data-lucide="eye" class="w-4 h-4"></i>
+                            </button>
+                            <button onclick="addToCart(${product.id}, '${product.name}', ${product.price}, '${product.image}')" class="p-2 bg-salvia-600 hover:bg-salvia-700 text-white rounded-lg transition-colors flex items-center gap-1 text-xs font-medium px-3">
+                                <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                                <span class="hidden sm:inline">Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            lucide.createIcons();
+        }
+
+        // FILTRO DE CATEGORÍAS
+        function filterCategory(cat) {
+            const buttons = document.querySelectorAll('.cat-filter');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-cat') === cat) {
+                    btn.className = 'cat-filter active px-4 py-2 rounded-full border border-salvia-500 bg-salvia-600 text-white font-medium transition-all';
+                } else {
+                    btn.className = 'cat-filter px-4 py-2 rounded-full border border-arena-300 bg-white text-gray-700 hover:border-salvia-400 transition-all';
+                }
+            });
+
+            if (cat === 'todos') {
+                renderProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === cat);
+                renderProducts(filtered);
+            }
+        }
+
+        // CARRITO LÓGICA
+        function addToCart(id, name, price, image) {
+            const existingIndex = cart.findIndex(item => item.id === id);
+            if (existingIndex > -1) {
+                cart[existingIndex].quantity += 1;
+            } else {
+                cart.push({ id, name, price, image, quantity: 1 });
+            }
+            updateCartUI();
+            toggleCart(true);
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const countEl = document.getElementById('cartCount');
+            const container = document.getElementById('cartItemsContainer');
+            const totalEl = document.getElementById('cartTotal');
+
+            const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+            countEl.innerText = totalItems;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-gray-400 space-y-3">
+                        <i data-lucide="shopping-bag" class="w-12 h-12 mx-auto text-arena-300"></i>
+                        <p class="text-sm font-light">Tu carrito está vacío.</p>
+                    </div>
+                `;
+                totalEl.innerText = '$0 CLP';
+                lucide.createIcons();
+                return;
+            }
+
+            container.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                const div = document.createElement('div');
+                div.className = 'flex items-center justify-between bg-white p-3 rounded-lg border border-arena-300';
+                div.innerHTML = `
+                    <div class="flex items-center gap-3">
+                        <img src="${item.image}" alt="${item.name}" class="w-12 h-12 rounded-md object-cover">
+                        <div>
+                            <h4 class="text-xs font-semibold text-bosque-900">${item.name}</h4>
+                            <span class="text-xs text-salvia-600 font-medium">$${item.price.toLocaleString('es-CL')} CLP x ${item.quantity}</span>
+                        </div>
+                    </div>
+                    <button onclick="removeFromCart(${item.id})" class="text-gray-400 hover:text-red-500 p-1">
+                        <i data-lucide="trash-2" class="w-4 h-4"></i>
+                    </button>
+                `;
+                container.appendChild(div);
+            });
+
+            totalEl.innerText = `$${total.toLocaleString('es-CL')} CLP`;
+            lucide.createIcons();
+        }
+
+        function toggleCart(forceOpen = false) {
+            const drawer = document.getElementById('cartDrawer');
+            if (forceOpen || drawer.classList.contains('hidden')) {
+                drawer.classList.remove('hidden');
+            } else {
+                drawer.classList.add('hidden');
+            }
+        }
+
+        function checkoutDemo() {
+            if (cart.length === 0) {
+                alert('El carrito está vacío. Agrega productos demostrativos.');
+                return;
+            }
+            alert('🛍️ MODO DEMOSTRACIÓN: La pasarela de pago real Webpay / Transferencia se habilitará al vincular inventario y tienda oficial.');
+        }
+
+        // BÚSQUEDA INTERACTIVA
+        function toggleSearch() {
+            const modal = document.getElementById('searchModal');
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.getElementById('searchInput').focus();
+            }
+        }
+
+        document.getElementById('searchBtn').addEventListener('click', toggleSearch);
+
+        function handleSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = '';
+
+            if (query.length < 2) return;
+
+            const matches = products.filter(p => p.name.toLowerCase().includes(query) || p.description.toLowerCase().includes(query));
+
+            if (matches.length === 0) {
+                resultsContainer.innerHTML = '<p class="text-xs text-gray-500 p-2">No se encontraron productos relacionados.</p>';
+                return;
+            }
+
+            matches.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'p-3 hover:bg-arena-100 rounded-lg cursor-pointer flex items-center justify-between transition-colors';
+                div.onclick = () => {
+                    toggleSearch();
+                    openProductModal(item.id);
+                };
+                div.innerHTML = `
+                    <div class="flex items-center gap-3">
+                        <img src="${item.image}" class="w-10 h-10 rounded object-cover">
+                        <div>
+                            <p class="text-xs font-semibold text-bosque-900">${item.name}</p>
+                            <span class="text-[10px] text-gray-500">$${item.price.toLocaleString('es-CL')} CLP</span>
+                        </div>
+                    </div>
+                    <span class="text-xs text-salvia-600 font-medium">Ver</span>
+                `;
+                resultsContainer.appendChild(div);
+            });
+        }
+
+        // MODAL VISTA DETALLE
+        function openProductModal(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+
+            document.getElementById('modalProductImg').src = product.image;
+            document.getElementById('modalProductCat').innerText = product.categoryLabel;
+            document.getElementById('modalProductTitle').innerText = product.name;
+            document.getElementById('modalProductDesc').innerText = product.description;
+            document.getElementById('modalProductPrice').innerText = `$${product.price.toLocaleString('es-CL')} CLP`;
+            
+            const btn = document.getElementById('modalProductBtn');
+            btn.onclick = () => {
+                addToCart(product.id, product.name, product.price, product.image);
+                closeProductModal();
+            };
+
+            document.getElementById('productModal').classList.remove('hidden');
+        }
+
+        function closeProductModal() {
+            document.getElementById('productModal').classList.add('hidden');
+        }
+
+        // ACORDEÓN FAQ
+        function toggleFaq(index) {
+            const content = document.getElementById(`faqContent-${index}`);
+            const icon = document.getElementById(`faqIcon-${index}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // MENÚ MÓVIL
+        function setupMobileMenu() {
+            const btn = document.getElementById('mobileMenuBtn');
+            const menu = document.getElementById('mobileMenu');
+            const links = document.querySelectorAll('.mobile-link');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+
+        // FORMULARIOS DEMOSTRATIVOS
+        function handleNewsletter(e) {
+            e.preventDefault();
+            const msg = document.getElementById('newsletterMsg');
+            msg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => msg.classList.add('hidden'), 4000);
+        }
+
+        function handleContact(e) {
+            e.preventDefault();
+            const msg = document.getElementById('contactMsg');
+            msg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => msg.classList.add('hidden'), 5000);
+        }
+
+        function openGuideModal() {
+            alert("📚 GUÍA DIGITAL DE CUIDADOS:\n\n1. Riego: Esperar a que la tierra esté 100% seca.\n2. Luz: Filtrada y abundante.\n3. Drenaje: Maceteros siempre con orificio en la base.\n4. Reproducción: Retira una hoja sana desde el tallo y déjala cicatrizar 3 días antes de ponerla sobre sustrato húmedo.");
+        }
+
+        function openAdvisoryModal() {
+            alert("🌿 ASESORÍAS PERSONALIZADAS:\n\nPuedes solicitar tu evaluación botánica llenando nuestro formulario de contacto en el área inferior. Nos comunicaremos para agendar tu reunión virtual o presencial.");
+        }
+
+        function showNotice(text) {
+            alert("Información Legal / Términos: " + text);
+        }
+    </script>
+</body>
+</html>
